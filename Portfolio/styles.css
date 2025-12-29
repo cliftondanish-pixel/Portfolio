@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1
+{
+    margin-bottom: 15px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #f4f4f4;
+}
+
+body {
+    background-color: #2c2c2c;
+    color: #333;
+}
+
+header {
+    padding: 10px;
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+}
+p{
+    padding: 5px;
+    line-height: 1.6;
+    text-align: center;
+}
+li{
+    
+    padding: 5px;
+}
+
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 4px solid 2c2c2c;
+    display: block;
+    margin: 20px auto;
+}
+
+#image {
+    background-color: #222;
+    padding-bottom: 90px;
+}
+
+div{
+    max-width: 900px;
+    margin: auto;
+}
+
+#education {
+    padding: 10px;
+    line-height: 1.6;
+    
+}
+
+
+#education p {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    column-gap: 40px;
+}
+
+#skills {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    line-height: 2;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style-type: none;
+    gap: 15px;
+}
+
+#skills li{
+    color: whitesmoke;
+    background-color: #191919cb;
+    padding: 12px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+}
+
+#projects {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    line-height: 1.8;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style-type: none;
+    gap: 15px;
+}
+
+#projects h3 {
+    padding: 12px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+
+#projects h3:hover {
+    transform: translateY(-5px);
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+}
+.delay-1 {
+    animation-delay: 0.5s;
+    text-align: center;
+}
+.delay-2 {
+    animation-delay: 1s;
+}
+.delay-3 {
+    animation-delay: 1.5s;
+}
+.delay-4 {
+    animation-delay: 2s;
+}
+.delay-5 {
+    animation-delay: 2.5s;
+}
+.delay-6 {
+    animation-delay: 3s;
+}
+.delay-7 {
+    animation-delay: 3.5s;
+}
+
+body
+{
+    animation: fadeUp 1s ease;
+}
+input[type="radio"] {
+    display: none;
+}
+.accordion {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background: #191919cb;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 6px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background: #fff;
+    color: #000000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: relative;
+}
+input[type="radio"]:checked ~ .card-content {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 15px;
+}
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+#contact {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    line-height: 2;
+    display: flex;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    column-gap: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+}
+#contact a {
+    text-decoration: none;
+}
+.my-name {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Gill Sans, sans-serif;
+
+    animation: moveDownFade 3s ease forwards;
+}
+@keyframes moveDownFade {
+    0% {
+        top: 80px;
+        opacity: 0;
+    }
+    50% {
+        top: 160px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 240px;
+        opacity: 1;
+    }
+}
+
+
+
